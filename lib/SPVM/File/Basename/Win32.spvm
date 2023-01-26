@@ -26,11 +26,11 @@ class File::Basename::Win32 extends File::Basename::Unix {
       $dirpath .= ".\\";
     }
     
-    return [$dirpath, $basename];
+    return [$basename, $dirpath, ""];
   }
   
   method _strip_trailing_sep : string ($path : string)  {
-
+    
     my $re = Regex->new("([^:])[\\\/]*\z");
     $path = $re->replace($path, method : string ($re : Regex) {
       return $re->cap1;

@@ -14,7 +14,7 @@ class File::Basename::Unix extends File::Basename {
     unless ($path) {
       die "The \$path must be defined";
     }
-
+    
     my $dirpath = (string)undef;
     my $basename = (string)undef;
     
@@ -24,14 +24,18 @@ class File::Basename::Unix extends File::Basename {
       $basename = $re->cap2;
     }
     
-    unless ($dirpath) {
+    unless (length $dirpath) {
       $dirpath = "./";
     }
     
-    return [$dirpath, $basename];
+    return [$basename, $dirpath, ""];
   }
   
   method basename : string ($path : string) {
+    unless ($path) {
+      die "The \$path must be defined";
+    }
+    
     $path = $self->(File::Basename::Interface)->_strip_trailing_sep($path);
 
     my $fileparse = $self->(File::Basename::Interface)->fileparse($path);
@@ -43,11 +47,14 @@ class File::Basename::Unix extends File::Basename {
       $basename = $dirname;
     }
     
-    return $path;
+    return $basename;
   }
   
   method dirname : string ($path : string) {
-
+    unless ($path) {
+      die "The \$path must be defined";
+    }
+    
     my $fileparse = $self->(File::Basename::Interface)->fileparse($path);
     
     my $basename = $fileparse->[0];
