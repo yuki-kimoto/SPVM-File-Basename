@@ -3,6 +3,7 @@ class File::Basename {
   use File::Basename::Unix;
   use Sys;
   
+  # Interfaces
   interface File::Basename::Interface;
   
   # Class Methods

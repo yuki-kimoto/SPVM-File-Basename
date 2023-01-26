@@ -33,8 +33,8 @@ WriteMakefile(
     resources => {
       repository => {
         type => 'git',
-        url  => '',
-        web  => '',
+        url  => 'https://github.com/yuki-kimoto/SPVM-File-Basename.git',
+        web  => 'https://github.com/yuki-kimoto/SPVM-File-Basename',
       },
     },
     no_index => {
