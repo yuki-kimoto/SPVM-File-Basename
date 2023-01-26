@@ -1,3 +1,9 @@
 class File::Basename::Interface {
+  method fileparse : string[] ($path : string);
+  
+  method basename : string ($path : string);
+  
+  method dirname : string ($path : string);
 
+  method _strip_trailing_sep : string ($path : string);
 }
