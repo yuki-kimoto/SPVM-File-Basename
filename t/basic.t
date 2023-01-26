@@ -20,6 +20,9 @@ if ($^O eq 'MSWin32') {
 else {
   $sep = "/";
 }
+
+warn "[Test Output]The file separator in this system is $sep";
+
 # fileparse
 {
   {
@@ -44,6 +47,27 @@ else {
   }
   {
     my $path = "c:${sep}foo${sep}bar${sep}";
+    is_deeply(SPVM::File::Basename->new->fileparse($path)->to_strings, [File::Basename::fileparse($path)]);
+  }
+
+  {
+    my $path = "foo/bar";
+    is_deeply(SPVM::File::Basename->new->fileparse($path)->to_strings, [File::Basename::fileparse($path)]);
+  }
+  {
+    my $path = "/foo/bar";
+    is_deeply(SPVM::File::Basename->new->fileparse($path)->to_strings, [File::Basename::fileparse($path)]);
+  }
+  {
+    my $path = "/foo/bar/";
+    is_deeply(SPVM::File::Basename->new->fileparse($path)->to_strings, [File::Basename::fileparse($path)]);
+  }
+  {
+    my $path = "";
+    is_deeply(SPVM::File::Basename->new->fileparse($path)->to_strings, [File::Basename::fileparse($path)]);
+  }
+  {
+    my $path = "c:/foo/bar/";
     is_deeply(SPVM::File::Basename->new->fileparse($path)->to_strings, [File::Basename::fileparse($path)]);
   }
 }
@@ -74,6 +98,27 @@ else {
     my $path = "c:${sep}foo${sep}bar${sep}";
     is(SPVM::File::Basename->new->basename($path)->to_string, File::Basename::basename($path));
   }
+
+  {
+    my $path = "foo/bar";
+    is(SPVM::File::Basename->new->basename($path)->to_string, File::Basename::basename($path));
+  }
+  {
+    my $path = "/foo/bar";
+    is(SPVM::File::Basename->new->basename($path)->to_string, File::Basename::basename($path));
+  }
+  {
+    my $path = "/foo/bar/";
+    is(SPVM::File::Basename->new->basename($path)->to_string, File::Basename::basename($path));
+  }
+  {
+    my $path = "";
+    is(SPVM::File::Basename->new->basename($path)->to_string, File::Basename::basename($path));
+  }
+  {
+    my $path = "c:/foo/bar/";
+    is(SPVM::File::Basename->new->basename($path)->to_string, File::Basename::basename($path));
+  }
 }
 
 # dirname
@@ -100,6 +145,26 @@ else {
   }
   {
     my $path = "c:${sep}foo${sep}bar${sep}";
+    is(SPVM::File::Basename->new->dirname($path)->to_string, File::Basename::dirname($path));
+  }
+  {
+    my $path = "foo/bar";
+    is(SPVM::File::Basename->new->dirname($path)->to_string, File::Basename::dirname($path));
+  }
+  {
+    my $path = "/foo/bar";
+    is(SPVM::File::Basename->new->dirname($path)->to_string, File::Basename::dirname($path));
+  }
+  {
+    my $path = "/foo/bar/";
+    is(SPVM::File::Basename->new->dirname($path)->to_string, File::Basename::dirname($path));
+  }
+  {
+    my $path = "";
+    is(SPVM::File::Basename->new->dirname($path)->to_string, File::Basename::dirname($path));
+  }
+  {
+    my $path = "c:/foo/bar/";
     is(SPVM::File::Basename->new->dirname($path)->to_string, File::Basename::dirname($path));
   }
 }
