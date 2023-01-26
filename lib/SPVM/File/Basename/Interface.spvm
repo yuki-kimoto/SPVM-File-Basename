@@ -1,4 +1,6 @@
-class File::Basename::Interface {
+class File::Basename::Interface : interface_t {
+  required method has_interfaces : int ();
+  
   method fileparse : string[] ($path : string);
   
   method basename : string ($path : string);

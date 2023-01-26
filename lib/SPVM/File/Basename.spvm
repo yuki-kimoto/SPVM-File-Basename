@@ -1,4 +1,8 @@
 class File::Basename {
+  use File::Basename::Win32;
+  use File::Basename::Unix;
+  use Sys;
+  
   interface File::Basename::Interface;
   
   # Class Methods
@@ -17,12 +21,14 @@ class File::Basename {
   }
   
   # Instance Methods
+  method has_interfaces : int () { return 1; }
+  
   method fileparse : string[] ($path : string) {
     return $self->(File::Basename::Interface)->fileparse($path);
   }
   
   method basename : string ($path : string) {
-    return $self->(File::Basename::Interface)->string($path);
+    return $self->(File::Basename::Interface)->basename($path);
   }
   
   method dirname : string ($path : string) {
