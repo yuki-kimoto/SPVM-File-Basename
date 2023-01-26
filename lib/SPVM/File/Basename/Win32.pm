@@ -1,4 +1,4 @@
-package SPVM::Runtime;
+package SPVM::File::Basename::Win32;
 
 
 
@@ -6,15 +6,15 @@ package SPVM::Runtime;
 
 =head1 Name
 
-SPVM::Runtime - Short Description
+SPVM::File::Basename::Win32 - Short Description
 
 =head1 Description
 
-C<SPVM::Runtime> is the C<Runtime> class in L<SPVM> language.
+C<SPVM::File::Basename::Win32> is the C<File::Basename::Win32> class in L<SPVM> language.
 
 =head1 Usage
 
-  use Runtime;
+  use File::Basename::Win32;
   
 =head1 Fields
 
