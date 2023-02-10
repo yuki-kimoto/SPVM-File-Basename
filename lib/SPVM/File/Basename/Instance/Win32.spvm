@@ -1,9 +1,9 @@
-class File::Basename::Win32 extends File::Basename::Unix {
+class File::Basename::Instance::Win32 extends File::Basename::Instance::Unix {
   
   # Class Methods
-  static method new : File::Basename::Win32 () {
+  static method new : File::Basename::Instance::Win32 () {
     
-    my $self = new File::Basename::Win32;
+    my $self = new File::Basename::Instance::Win32;
     
     return $self;
   }

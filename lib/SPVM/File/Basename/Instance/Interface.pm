@@ -1,4 +1,4 @@
-package SPVM::File::Basename::Interface;
+package SPVM::File::Basename::Instance::Interface;
 
 
 
@@ -6,17 +6,17 @@ package SPVM::File::Basename::Interface;
 
 =head1 Name
 
-SPVM::File::Basename::Interface - File::Basename Interface
+SPVM::File::Basename::Instance::Interface - File::Basename::Instance Interface
 
 =head1 Description
 
-C<SPVM::File::Basename::Interface> is the C<File::Basename::Interface> class in L<SPVM> language.
+C<SPVM::File::Basename::Instance::Interface> is the C<File::Basename::Instance::Interface> class in L<SPVM> language.
 
-This class is the L<File::Basename|SPVM::File::Basename> interface.
+This class is the L<File::Basename::Instance|SPVM::File::Basename::Instance> interface.
 
 =head1 Usage
 
-  use File::Basename::Interface;
+  use File::Basename::Instance::Interface;
 
 =head1 Interface Methods
 
@@ -40,7 +40,7 @@ This class is the L<File::Basename|SPVM::File::Basename> interface.
 
 =over 2
 
-=item * L<File::Basename|SPVM::File::Basename>
+=item * L<File::Basename::Instance|SPVM::File::Basename::Instance>
 
 =back
 
