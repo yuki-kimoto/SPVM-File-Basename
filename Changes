@@ -1,3 +1,7 @@
+0.03 2023-03-06
+  [Incompatible Changes]
+    * Removed the File::Basename::Instance::Interface class.
+    * Remvoed the has_interfaces method in the File::Basename::Instance.
 0.02 2023-02-10
   [Incompatible Changes]
     * Current File::Basename is copied to File::Basename::Instance.

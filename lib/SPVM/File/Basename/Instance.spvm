@@ -3,9 +3,6 @@ class File::Basename::Instance {
   use File::Basename::Instance::Unix;
   use Sys;
   
-  # Interfaces
-  interface File::Basename::Instance::Interface;
-  
   # Class Methods
   static method new : File::Basename::Instance () {
     
@@ -22,17 +19,9 @@ class File::Basename::Instance {
   }
   
   # Instance Methods
-  method has_interfaces : int () { return 1; }
+  method fileparse : string[] ($path : string) { die "Not implemented"; }
   
-  method fileparse : string[] ($path : string) {
-    return $self->(File::Basename::Instance::Interface)->fileparse($path);
-  }
+  method basename : string ($path : string) { die "Not implemented"; }
   
-  method basename : string ($path : string) {
-    return $self->(File::Basename::Instance::Interface)->basename($path);
-  }
-  
-  method dirname : string ($path : string) {
-    return $self->(File::Basename::Instance::Interface)->dirname($path);
-  }
+  method dirname : string ($path : string) { die "Not implemented"; }
 }
