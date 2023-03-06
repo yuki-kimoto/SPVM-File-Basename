@@ -1,4 +1,6 @@
 0.03 2023-03-06
+  [Prerequirement Changes]
+    * SPVM 0.9695+ is needed.
   [Incompatible Changes]
     * Removed the File::Basename::Instance::Interface class.
     * Remvoed the has_interfaces method in the File::Basename::Instance.
