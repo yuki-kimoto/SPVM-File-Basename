@@ -1,4 +1,6 @@
 0.041 2023-05-09
+  [License Change]
+    * The license is changed to MIT License.
   [Prerequirement Changes]
     SPVM::Sys 0.481 is required.
     SPVM::Regex is 0.241002 is required.

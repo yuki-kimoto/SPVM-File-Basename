@@ -1,3 +1,6 @@
+# Copyright (c) 2023 Yuki Kimoto
+# MIT License
+
 class File::Basename::Instance::Unix extends File::Basename::Instance {
   use Regex;
 

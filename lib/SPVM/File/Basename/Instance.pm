@@ -73,18 +73,9 @@ This class parses a file path into a directory and a base name.
 
 =back
 
-=head1 Repository
-
-L<SPVM::File::Basename::Instance - Github|https://github.com/yuki-kimoto/SPVM-File-Basename>
-
-=head1 Author
-
-Yuki Kimoto C<kimoto.yuki@gmail.com>
-
 =head1 Copyright & License
 
-Copyright 2023-2023 Yuki Kimoto, all rights reserved.
+Copyright (c) 2023 Yuki Kimoto
 
-This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl itself.
+MIT License
 
