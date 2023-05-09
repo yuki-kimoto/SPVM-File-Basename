@@ -6,13 +6,11 @@ package SPVM::File::Basename::Instance::Unix;
 
 =head1 Name
 
-SPVM::File::Basename::Instance::Unix - File::Basename::Instance Implementation for Linux, UNIX, and Mac.
+SPVM::File::Basename::Instance::Unix - Unix/Linux/Mac Implementation of File::Basename::Instance
 
 =head1 Description
 
-C<SPVM::File::Basename::Instance::Unix> is the C<File::Basename::Instance::Unix> class in L<SPVM> language.
-
-This class is a child class of the L<File::Basename::Instance|SPVM::File::Basename::Instance> class for Linux, UNIX, and Mac.
+The File::Basename::Instance::Unix class of L<SPVM> is the Unix/Linux/Mac implementation of L<File::Basename::Instance|SPVM::File::Basename::Instance>.
 
 =head1 Usage
 
