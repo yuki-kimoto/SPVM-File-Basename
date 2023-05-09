@@ -20,7 +20,7 @@ The File::Basename class of L<SPVM> has the methods to parse a file path into th
   
   # fileparse
   {
-    my $ret =File::Basename->fileparse($path);
+    my $ret = File::Basename->fileparse($path);
     
     # a.txt
     my $base_name = $ret->[0];
@@ -32,13 +32,13 @@ The File::Basename class of L<SPVM> has the methods to parse a file path into th
   # basename
   {
     # a.txt
-    my $base_name =File::Basename->basename($path);
+    my $base_name = File::Basename->basename($path);
   }
 
   # dirname
   {
     # dir
-    my $dir_name =File::Basename->dirname($path);
+    my $dir_name = File::Basename->dirname($path);
   }
 
 =head1 Interfaces
