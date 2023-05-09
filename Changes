@@ -1,3 +1,8 @@
+0.041 2023-05-09
+  [Prerequirement Changes]
+    SPVM::Sys 0.481 is required.
+    SPVM::Regex is 0.241002 is required.
+    SPVM is 0.976 is required.
 0.04 2023-03-15
   [Prerequirement Changes]
     * SPVM::Sys 0.43+ is needed.
