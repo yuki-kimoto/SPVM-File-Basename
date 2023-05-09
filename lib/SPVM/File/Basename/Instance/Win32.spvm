@@ -42,7 +42,7 @@ class File::Basename::Instance::Win32 extends File::Basename::Instance::Unix {
   
   method _strip_trailing_sep : string ($path : string)  {
     
-    $RE_STRIP_TRAILING_SEP->replace($path, method : string ($re : Regex, $match : Regex::Match) {
+    $path = $RE_STRIP_TRAILING_SEP->replace($path, method : string ($re : Regex, $match : Regex::Match) {
       return $match->cap1;
     });
     
