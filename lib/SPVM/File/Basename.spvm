@@ -2,7 +2,7 @@
 # MIT License
 
 class File::Basename {
-  version "0.040";
+  version "0.041";
   
   use File::Basename::Instance;
   
