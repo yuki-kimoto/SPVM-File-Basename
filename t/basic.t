@@ -14,6 +14,10 @@ use SPVM::File::Basename;
 use SPVM 'File::Basename';
 use SPVM 'TestCase::File::Basename';
 
+my $api = SPVM::api();
+
+my $start_memory_blocks_count = $api->get_memory_blocks_count();
+
 ok(SPVM::TestCase::File::Basename->test);
 
 my $sep;
@@ -176,5 +180,10 @@ warn "[Test Output]The file separator in this system is $sep";
 {
   is($SPVM::File::Basename::VERSION, SPVM::Fn->get_version_string('File::Basename'));
 }
+
+SPVM::Fn->destroy_runtime_permanent_vars;
+
+my $end_memory_blocks_count = $api->get_memory_blocks_count();
+is($end_memory_blocks_count, $start_memory_blocks_count);
 
 done_testing;

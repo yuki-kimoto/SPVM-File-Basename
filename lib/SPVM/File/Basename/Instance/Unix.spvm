@@ -2,6 +2,8 @@
 # MIT License
 
 class File::Basename::Instance::Unix extends File::Basename::Instance {
+  version_from File::Basename;
+  
   use Regex;
 
   our $RE_FILEPARSE1 : Regex;

@@ -2,6 +2,8 @@
 # MIT License
 
 class File::Basename::Instance {
+  version_from File::Basename;
+  
   use File::Basename::Instance::Win32;
   use File::Basename::Instance::Unix;
   use Sys;
