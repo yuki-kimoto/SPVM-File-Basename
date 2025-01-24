@@ -1,6 +1,6 @@
 package SPVM::File::Basename;
 
-our $VERSION = "0.041001";
+our $VERSION = "0.042 ";
 
 1;
 
@@ -10,7 +10,7 @@ SPVM::File::Basename - Parsing File Path into Directory and Base Name
 
 =head1 Description
 
-The File::Basename class of L<SPVM> has the methods to parse a file path into the directory part and the base name part.
+File::Basename class in L<SPVM> has the methods to parse a file path into the directory part and the base name part.
 
 =head1 Usage
 
