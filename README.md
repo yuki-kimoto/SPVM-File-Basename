@@ -1,4 +1,4 @@
 # SPVM::File::Basename
 
-SPVM::File::Basename is a SPVM module.
+<a href="https://metacpan.org/pod/SPVM::File::Basename">SPVM::File::Basename - CPAN</a>
 
