@@ -4,7 +4,6 @@
 .github/workflows/windows-2019.yml
 .github/workflows/windows-latest.yml
 .gitignore
-Basename.pm.original
 Changes
 lib/SPVM/File/Basename.pm
 lib/SPVM/File/Basename.spvm
