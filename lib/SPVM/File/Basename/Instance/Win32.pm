@@ -6,37 +6,23 @@ package SPVM::File::Basename::Instance::Win32;
 
 =head1 Name
 
-SPVM::File::Basename::Instance::Win32 - Windows Implementation of File::Basename::Instance
+SPVM::File::Basename::Instance::Win32 - Implementation of File::Basename::Instance for Windows
 
 =head1 Description
 
-The File::Basename::Instance::Win32 class of L<SPVM> is the Windows implementation of L<File::Basename::Instance|SPVM::File::Basename::Instance>.
+The File::Basename::Instance::Win32 class of L<SPVM> is an implementation of L<File::Basename::Instance|SPVM::File::Basename::Instance>.
 
-=head1 Usage
+This class is private class.
 
-  use File::Basename::Instance::Win32;
-  
-  my $fb = File::Basename::Instance::Win32->new;
-
-=head1 Inheritance
+=head1 See Also
 
 =over 2
 
-=item * L<File::Basename::Instance::Unix|SPVM::File::Basename::Instance::Unix>
+=item * L<File::Basename|SPVM::File::Basename>
+
+=item * L<File::Basename::Instance|SPVM::File::Basename::Instance>
 
 =back
-
-=head1 Class Methods
-
-=head2 new
-
-  static method new : File::Basename::Instance::Win32 ();
-
-=head1 Instance Methods
-
-=head2 fileparse
-
-  method fileparse : string[] ($path : string);
 
 =head1 Copyright & License
 

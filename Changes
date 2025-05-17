@@ -1,3 +1,9 @@
+0.044 2025-05-18
+  [Incompatible Changes]
+    * File::Basename::Instance::Unix becomes a private class.
+    * File::Basename::Instance::Win32 becomes a private class.
+    * File::Basename::Instance becomes a private class.
+    
 0.043 2025-01-30
   [Internal Changes]
     * Use Re class instead of Regex class.

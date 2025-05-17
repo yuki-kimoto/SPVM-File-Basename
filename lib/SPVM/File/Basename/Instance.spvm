@@ -4,13 +4,15 @@
 class File::Basename::Instance {
   version_from File::Basename;
   
+  allow File::Basename;
+  
   use File::Basename::Instance::Win32;
   use File::Basename::Instance::Unix;
   use Sys;
   use Sys::OS;
   
   # Class Methods
-  static method new : File::Basename::Instance () {
+  private static method new : File::Basename::Instance () {
     
     my $self : File::Basename::Instance;
     
@@ -25,9 +27,10 @@ class File::Basename::Instance {
   }
   
   # Instance Methods
-  method fileparse : string[] ($path : string) { die "Not implemented"; }
+  protected method fileparse : string[] ($path : string) { die "Not implemented"; }
   
-  method basename : string ($path : string) { die "Not implemented"; }
+  protected method basename : string ($path : string) { die "Not implemented"; }
   
-  method dirname : string ($path : string) { die "Not implemented"; }
+  protected method dirname : string ($path : string) { die "Not implemented"; }
+  
 }

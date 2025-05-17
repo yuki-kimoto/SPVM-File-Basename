@@ -4,70 +4,23 @@ package SPVM::File::Basename::Instance;
 
 =head1 Name
 
-SPVM::File::Basename::Instance - Object-Oriented File::Basename
+SPVM::File::Basename::Instance - Object-Oriented version of File::Basename
 
 =head1 Description
 
-The SPVM::File::Basename::Instance class of L<SPVM> has the methods for Object-Oriented L<File::Basename|SPVM::File::Basename>.
+SPVM::File::Basename::Instance class in L<SPVM> is a object-oriented version of L<File::Basename|SPVM::File::Basename>.
 
-=head1 Usage
+This class is a private class.
 
-  use File::Basename::Instance;
-  
-  my $fb = File::Basename::Instance->new;
-  
-  my $path = "dir/a.txt";
-  
-  # fileparse
-  {
-    my $ret = $fb->fileparse($path);
-    
-    # a.txt
-    my $base_name = $ret->[0];
-    
-    # dir/
-    my $dir_name = $ret->[1];
-  }
-  
-  # basename
-  {
-    # a.txt
-    my $base_name = $fb->basename($path);
-  }
-
-  # dirname
-  {
-    # dir
-    my $dir_name = $fb->dirname($path);
-  }
-
-=head1 Class Methods
-
-=head2 new
-
-  static method new : File::Basename::Instance ();
-
-=head1 Instance Methods
-
-=head2 fileparse
-
-  method fileparse : string[] ($path : string);
-
-=head2 basename
-
-  method basename : string ($path : string);
-
-=head2 dirname
-
-  method dirname : string ($path : string);
-
-=head1 Well Known Child Classes
+=head1 See Also
 
 =over 2
 
-=item L<File::Basename::Instance::Unix|SPVM::File::Basename::Instance::Unix>
+=item * L<File::Basename|SPVM::File::Basename>
 
-=item L<File::Basename::Instance::Win32|SPVM::File::Basename::Instance::Win32>
+=item * L<File::Basename::Instance::Unix|SPVM::File::Basename::Instance::Unix>
+
+=item * L<File::Basename::Instance::Win32|SPVM::File::Basename::Instance::Win32>
 
 =back
 

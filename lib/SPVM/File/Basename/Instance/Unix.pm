@@ -6,51 +6,21 @@ package SPVM::File::Basename::Instance::Unix;
 
 =head1 Name
 
-SPVM::File::Basename::Instance::Unix - Unix/Linux/Mac Implementation of File::Basename::Instance
+SPVM::File::Basename::Instance::Unix - Implementation of File::Basename::Instance for Unix-like OSs
 
 =head1 Description
 
-The File::Basename::Instance::Unix class of L<SPVM> is the Unix/Linux/Mac implementation of L<File::Basename::Instance|SPVM::File::Basename::Instance>.
+File::Basename::Instance::Unix class in L<SPVM> is an implementation of L<File::Basename::Instance|SPVM::File::Basename::Instance> for Unix-like OSs.
 
-=head1 Usage
+This class is private class.
 
-  use File::Basename::Instance::Unix;
-
-  my $fb = File::Basename::Instance::Unix->new;
-
-=head1 Inheritance
+=head1 See Also
 
 =over 2
+
+=item * L<File::Basename|SPVM::File::Basename>
 
 =item * L<File::Basename::Instance|SPVM::File::Basename::Instance>
-
-=back
-
-=head1 Class Methods
-
-=head2 new
-
-  static method new : File::Basename::Instance::Unix ();
-
-=head1 Instance Methods
-
-=head2 fileparse
-
-  method fileparse : string[] ($path : string);
-
-=head2 basename
-
-  method basename : string ($path : string);
-
-=head2 dirname
-
-  method dirname : string ($path : string);
-
-=head1 Well Known Child Classes
-
-=over 2
-
-=item L<File::Basename::Instance::Win32|SPVM::File::Basename::Instance::Win32>
 
 =back
 

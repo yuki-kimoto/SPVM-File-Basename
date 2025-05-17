@@ -4,17 +4,20 @@
 class File::Basename::Instance::Win32 extends File::Basename::Instance::Unix {
   version_from File::Basename;
   
+  allow File::Basename;
+  allow File::Basename::Instance;
+  
   use Re;
   
   # Class Methods
-  static method new : File::Basename::Instance::Win32 () {
+  private static method new : File::Basename::Instance::Win32 () {
     
     my $self = new File::Basename::Instance::Win32;
     
     return $self;
   }
   
-  method fileparse : string[] ($path : string) {
+  protected method fileparse : string[] ($path : string) {
     unless ($path) {
       die "The \$path must be defined";
     }
@@ -34,7 +37,7 @@ class File::Basename::Instance::Win32 extends File::Basename::Instance::Unix {
     return [$basename, $dirpath, ""];
   }
   
-  method _strip_trailing_sep : string ($path : string)  {
+  protected method _strip_trailing_sep : string ($path : string)  {
     
     my $path_ref = [$path];
     
