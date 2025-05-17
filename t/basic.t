@@ -28,8 +28,6 @@ else {
   $sep = "/";
 }
 
-warn "[Test Output]The file separator in this system is $sep";
-
 # fileparse
 {
   {
