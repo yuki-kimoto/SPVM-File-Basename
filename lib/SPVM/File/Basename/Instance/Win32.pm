@@ -12,7 +12,7 @@ SPVM::File::Basename::Instance::Win32 - Implementation of File::Basename::Instan
 
 The File::Basename::Instance::Win32 class of L<SPVM> is an implementation of L<File::Basename::Instance|SPVM::File::Basename::Instance>.
 
-This class is private class.
+This class is a private class only used from L<File::Basename|SPVM::File::Basename> and L<File::Basename::Instance|SPVM::File::Basename::Instance>.
 
 =head1 See Also
 

@@ -10,7 +10,7 @@ SPVM::File::Basename::Instance - Object-Oriented version of File::Basename
 
 SPVM::File::Basename::Instance class in L<SPVM> is a object-oriented version of L<File::Basename|SPVM::File::Basename>.
 
-This class is a private class.
+This class is  private class only used from L<File::Basename|SPVM::File::Basename>.
 
 =head1 See Also
 

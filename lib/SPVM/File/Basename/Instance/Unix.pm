@@ -12,7 +12,7 @@ SPVM::File::Basename::Instance::Unix - Implementation of File::Basename::Instanc
 
 File::Basename::Instance::Unix class in L<SPVM> is an implementation of L<File::Basename::Instance|SPVM::File::Basename::Instance> for Unix-like OSs.
 
-This class is private class.
+This class is a private class only used from L<File::Basename|SPVM::File::Basename> and L<File::Basename::Instance|SPVM::File::Basename::Instance>.
 
 =head1 See Also
 

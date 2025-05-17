@@ -7,7 +7,6 @@ class File::Basename::Instance::Unix extends File::Basename::Instance {
   allow File::Basename;
   allow File::Basename::Instance;
   
-  
   use Re;
   
   # Class Methods
@@ -91,4 +90,5 @@ class File::Basename::Instance::Unix extends File::Basename::Instance {
     
     return $path;
   }
+  
 }

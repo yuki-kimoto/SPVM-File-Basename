@@ -10,7 +10,7 @@ SPVM::File::Basename - Parsing File Path into Directory and Base Name
 
 =head1 Description
 
-File::Basename class in L<SPVM> has the methods to parse a file path into the directory part and the base name part.
+File::Basename class in L<SPVM> has methods to parse a file path into a directory part and a base name.
 
 =head1 Usage
 
@@ -41,48 +41,48 @@ File::Basename class in L<SPVM> has the methods to parse a file path into the di
     my $dir_name = File::Basename->dirname($path);
   }
 
-=head1 Interfaces
-
-=over 2
-
-=item * L<File::Basename::Interface|SPVM::File::Basename::Interface>
-
-=back
-
 =head1 Class Methods
 
 =head2 fileparse
 
-  static method fileparse : string[] ($path : string);
+C<static method fileparse : string[] ($path : string);>
+
+Divides a file path into its directory part and base name and returns them as an array.
+
+The index 0 of the returned array is a base name.
+
+The index 1 of the returned array is a directory part.
+
+See L<File::Basename/"fileparse"> for details.
 
 =head2 basename
 
-  static method basename : string ($path : string);
+C<static method basename : string ($path : string);>
+
+Returns the base name of the path $path.
+
+See L<File::Basename/"basename"> for details.
 
 =head2 dirname
 
-  static method dirname : string ($path : string);
+C<static method dirname : string ($path : string);>
 
-=head1 Object Oriented Classes
+Returns the directory part of the path $path.
 
-C<File::Basename> is implemented using the following classes.
-
-=over 2
-
-=item L<File::Basename::Instance::Unix|SPVM::File::Basename::Instance::Unix>
-
-=item L<File::Basename::Instance::Win32|SPVM::File::Basename::Instance::Win32>
-
-=back
-
-=head2 
+See L<File::Basename/"dirname"> for details.
 
 =head1 See Also
 
-=head2 File::Basename
+=over 2
+
+=item * L<File::Basename::Instance|SPVM::File::Basename::Instance>
+
+=back
+
+=head1 Porting
 
 C<SPVM::File::Basename> is a Perl's L<File::Basename> porting to L<SPVM>.
-  
+
 =head1 Repository
 
 L<SPVM::File::Basename - Github|https://github.com/yuki-kimoto/SPVM-File-Basename>
