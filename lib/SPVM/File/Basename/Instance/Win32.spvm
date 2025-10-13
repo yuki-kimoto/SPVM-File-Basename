@@ -39,13 +39,11 @@ class File::Basename::Instance::Win32 extends File::Basename::Instance::Unix {
   
   protected method _strip_trailing_sep : string ($path : string)  {
     
-    my $path_ref = [$path];
+    $path = copy $path;
     
-    Re->s($path_ref, "([^:])[\\\/]*\z", method : string ($re : Regex, $match : Regex::Match) {
+    Re->s((mutable string)$path, "([^:])[\\\/]*\z", method : string ($re : Regex, $match : Regex::Match) {
       return $match->cap1;
     });
-    
-    $path = $path_ref->[0];
     
     return $path;
   }
