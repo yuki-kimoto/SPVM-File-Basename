@@ -1,3 +1,7 @@
+0.045 2025-10-13
+  [Requirement Changes]
+    * Require SPVM::Regex 0.252.
+    
 0.044 2025-05-18
   [Incompatible Changes]
     * File::Basename::Instance::Unix becomes a private class.
